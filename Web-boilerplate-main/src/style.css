@@ -1,0 +1,860 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    padding: 10px 70px;
+    margin: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.teachinder-title {
+    width: 300px;
+    height: 100px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 5px 10px;
+    width: 300px;
+    font-size: 20px;
+    border: 1px solid #525252;
+    border-radius: 2px;
+}
+
+.search-button {
+    padding: 5px 15px;
+    margin-left: 10px;
+    background-color: #fff;
+    border: 2px solid #e57373;
+    color: #e57373;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    height: 33px;
+}
+
+.search-button:hover {
+    background-color: #e57373;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    margin: 0 120px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e57373;
+    font-weight: 1000;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #6b0024;
+}
+
+.add-teacher {
+    margin-bottom: 10px;
+    margin-right: -18px;
+    padding: 5px 15px;
+    background-color: #fff;
+    border: 2px solid #e57373;
+    color: #e57373;
+    height: 50px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+
+}
+
+.knopka{
+        display: flex;
+            align-items: flex-end;
+}
+
+.add-teacher:hover {
+    background-color: #e57373;
+    color: #fff;
+}
+
+.string {
+    width: calc(100% - 70%);
+    margin: 10px auto;
+border: 1px solid black;
+
+}
+
+.top-string {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.vertical {
+    border-style: dotted;
+    color: #000000;
+}
+
+.filters {
+    display: flex;
+    justify-content: left;
+    margin-left: 180px;
+    gap: 25px;
+    margin-bottom: 15px;
+    color: #898686;
+    margin-top: 40px;
+}
+
+.filters label {
+    font-size: 0.9em;
+}
+
+.filters select,
+.filters input[type="checkbox"] {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.aged,
+.sexed, 
+.regiond,
+.photod,
+.favored {
+    align-items: center;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-main {
+    top: 0;
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.person {
+
+    position: relative;
+        background-color: white;
+        width: 15%;
+        margin: 20px 12px 10px 20px;
+        /*height: 5%;*/
+        text-align: center;
+    
+}
+.teacher-info {
+    
+    text-align: center;
+    margin-left: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.person img {
+    border: 3px solid #e57373;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #555;
+}
+.main-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: #fffff5;
+}
+.teacher-AllCards {
+    width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        background-color: #fffff5;
+        margin-left: 150px;
+        /*margin-right: 200px;*/
+}
+.placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px auto;
+    font-size: 1.5em;
+    color: #555;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px auto 30px;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #ffffff;
+    border-bottom: 2px solid #000000;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+  tr:nth-child(even) {
+      background-color: #f2f2f2;
+  }
+
+  tr:nth-child(odd) {
+      background-color: #ffffff;
+      /* Темніший колір */
+  }
+
+.pagination {
+    
+    text-align: left;
+    margin-left: calc(100% - 90%);
+}
+
+.pagination a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+}
+
+.favorite-main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.favorites {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.favorite-item {
+    text-align: center;
+    width: 100px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.strelka {
+    margin-top: 20px;
+    padding-right: 0;
+}
+.strelka-right {
+    padding-right: 0;
+    margin-top: 20px;
+    transform: scaleX(-1);
+}
+.favorite-item img {
+    border: 3px solid #e57373;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+}
+
+.favorite-item .initials {
+    border: 3px solid #e57373;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+
+    color:#e57373;
+    margin-bottom: 10px;
+}
+
+.favorite-item p {
+    margin: 5px 0;
+}
+
+.statistics {
+    background-color: #fffff5;
+    padding: 20px 0;
+}
+
+footer {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-text p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #555;
+    margin-left: 140px;
+    margin-right: 140px;
+}
+
+.footer-menu {
+display: flex;
+margin-top: 20px;
+justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: 68px;
+    padding: 10px 70px;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.footer-menu a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-button button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #e74c3c;
+    border: 2px solid #e74c3c;
+    font-weight: bold;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+.nav-footer{
+   margin-left: -51px;
+}
+.footer-button button:hover {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal:target {
+    display: block;
+    /* Show modal when targeted */
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 7px;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.teacher-info-in {
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.teacher-photo-in {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.teacher-details h1 {
+    margin: 0;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.teacher-details h3 {
+    margin: 0;
+}
+
+.teacher-details h2 {
+    margin: 0;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.lorem-text {
+    font-size: 15px;
+    color: #777;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.info-modal {
+    line-height: 40px;
+}
+
+.teacher-details {
+    margin-left: 20px;
+}
+
+.toggle-map {
+    color: blue;
+    text-decoration-line: dotted;
+    margin-left: 20px;
+}
+
+
+
+.nameOfTeachher {
+    background-color: #3a3838;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: normal;
+    padding-left: 20px;
+   
+}
+
+.all-block {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.modal-form {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content-add {
+    background-color: white;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+}
+
+.add-teacher-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-teacher-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-text,
+.form-email,
+.form-tel,
+.form-date,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.teacher-badge strong {
+    margin: 3px 10px;
+}
+
+.teacher-badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 234, 7);
+    position: absolute;
+    top: -10px;
+    right: 18px;
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+ .from-row {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .form-group {
+     width: 48%;
+     /* кожен елемент займатиме приблизно половину */
+ }
+
+ .form-group-2 {
+    width: 48%;
+ }
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.gender-form {
+display: flex;
+justify-content: space-between;
+}
+
+
+.radio-group input {
+    margin-right: 8px;
+    margin-left: 5px;
+}
+
+button.add-btn {
+    background-color: #ff5757;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button.add-btn:hover {
+    background-color: #e04e4e;
+}
+
+button.add-btn:active {
+    transform: scale(0.98);
+}
+
+/* Show modal when targeted */
+#formModal:target {
+    display: block;
+}
+
+.form-color{
+    margin-left: 40px;
+    width:60px;
+        /* Задаємо ширину, наприклад, 50px */
+        height: 20px;
+        /* Висота інпуту, щоб створити вузьку смужку */
+        padding: 3px;
+        /* Відсутність внутрішнього відступу */
+      
+        outline: none;
+        /* Забираємо обведення при фокусі */
+        cursor: pointer;
+        /* Робимо курсор у вигляді руки */
+}
+
+color-bckg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+/* Адаптація для екранів середнього розміру (планшети) */
+@media (max-width: 1024px) {
+    .filters {
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 0px auto;
+        margin-left: 100px;
+        gap: 10px;
+    }
+
+                  .search-container {
+                      flex-direction: column;
+                  }
+        
+                  .search-button {
+                      margin-top: 20px;
+                  }
+
+            .knopka{
+                margin-top: 20px;
+            }
+nav {
+    flex-direction: column;
+}
+    .filters .vertical {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+    header {
+        flex-direction: column;
+    }
+
+ .teacher-AllCards{
+     width: 80%;
+     margin: 0 auto;
+    }
+
+    .person {
+        width: 20%;
+    }
+
+    .favorites {
+        gap: 0;
+        justify-content: center;
+    }
+
+    .favorite-item{
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 20%;
+    }
+}
+
+/* Адаптація для маленьких екранів (мобільні пристрої) */
+@media (max-width: 768px) {
+    .top-string {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        margin: 10 px auto;
+        gap: 10px;
+    }
+
+    .teacher-AllCards{
+        width:80%;
+        margin: 0 auto;
+        margin-right: 20px;
+    }
+
+    .filters select,
+    .filters input[type="checkbox"] {
+        width: 100%;
+        margin-left: 0;
+        padding: 8px;
+    }
+          .top-string {
+              align-items: center;
+              margin-left: 30px;
+          }
+    
+          .filters {
+              flex-direction: column;
+              align-items: center;
+              gap: 10px;
+              margin: 0 auto;
+          }
+
+    .filters label {
+        font-size: 1em;
+    }
+
+    .filters .vertical {
+        display: none;
+    }
+
+        /* Адаптація для екранів середнього розміру (планшети) */
+        @media (max-width: 400px) {
+            .filters {
+                flex-direction: row;
+                align-items: flex-start;
+                margin: 10 px auto;
+                gap: 10px;
+            }
+            
+nav  {
+    flex-direction: column;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+            .search-container{
+                flex-direction: column;
+            }
+
+            .search-button{
+                margin-top: 20px;
+            }
+
+            .filters .vertical {
+                display: none;
+            }
+            .top-string{
+                align-items: center;
+                margin-left: 30px;
+            }
+           .filters {
+               flex-direction: column;
+               align-items: center;
+               gap: 10px;
+               margin: 0 auto;
+           }
+            h1 {
+                font-size: 1.8em;
+            }
+    
+            header {
+                flex-direction: column;
+            }
+    
+    
+            .teacher-AllCards {
+                width: 100%;
+                margin-left: 20px;
+            }
+    
+            .person {
+                width: 100%;
+            }
+    
+            .favorites {
+                gap: 0;
+                justify-content: center;
+            }
+    
+            .favorite-item {
+                margin-right: 0px;
+                margin-left: 0px;
+                width: 20%;
+            }
+        }
+}

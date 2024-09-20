@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head itemscope itemtype="http://schema.org/WebSite">
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="msapplication-tap-highlight" content="no">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   <title>Teachinder</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+   <header>
+      <img src="images/title.jpg" alt="Teachinder" class="teachinder-title">
+      <div class="search-container">
+         <input type="text" placeholder="Name, note or age to search">
+         <button class="search-button">Search</button>
+      </div>
+   </header>
+
+   <nav>
+      <ul>
+         <li><a href="#">Teachers</a></li>
+         <li><a href="#">Statistics</a></li>
+         <li><a href="#">Favorites</a></li>
+         <li><a href="#">About</a></li>
+      </ul>
+      <span class="knopka"><a href="#formModal"><button class="add-teacher" id="add-info">Add teacher</button></a></span> 
+   </nav>
+   <hr class="string">
+   <div class="top-string">
+      <h1>Top Teachers</h1>
+      <div class="filters">
+         <div class="aged">
+            <label for="age">Age</label>
+            <select id="age">
+               <option>18-31</option>
+               <option>32-45</option>
+               <option>45+</option>
+            </select>
+         </div>
+         <hr class="vertical">
+         <div class="regiond">
+            <label for="region">Region</label>
+            <select id="region">
+               <option>Europe</option>
+               <option>Asia</option>
+               <option>Americas</option>
+            </select>
+         </div>
+         <hr class="vertical">
+         <div class="sexed">
+            <label for="sex">Sex</label>
+            <select id="sex">
+               <option>Male</option>
+               <option>Female</option>
+               <option>Other</option>
+            </select>
+         </div>
+         <hr class="vertical">
+         <div class="photod">
+               <label>
+                  <input type="checkbox"> Only with photo
+               </label>
+         </div>
+         <hr class="vertical">
+         <div class="favored">
+               <label>
+                  <input type="checkbox"> Only favorites
+               </label>
+         </div>
+      </div>
+   </div>
+   <main>
+    <section class="main-section">
+      <div class="teacher-AllCards">
+         <div class="person">
+           <a href= "#teacherInfoModal" class="open-modal-button"><img src="images/teacher.png" alt="Ihor Tkachuk"></a> 
+            <div class="teacher-info">
+               <h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2>
+               <p>Chemistry<br>Ukraine</p>
+            </div>
+         </div>
+         <!---->
+         <div class="person">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <div class="teacher-info">
+               <h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2>
+               <p>Chemistry<br>Ukraine</p>
+            </div>
+         </div>
+         <div class="person">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <div class="teacher-badge">
+               <strong>★</strong>
+            </div>
+            <div class="teacher-info">
+               <h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2>
+               <p>Chemistry<br>Ukraine</p>
+            </div>
+         </div>
+         <div class="person">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <div class="teacher-info">
+              <div class="h2"><h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2></div> 
+              <div class="p"><p>Chemistry<br>Ukraine</p></div> 
+            </div>
+         </div>
+         <div class="person">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <div class="teacher-badge">
+               <strong>★</strong>
+            </div>
+            <div class="teacher-info">
+               <h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2>
+               <p>Chemistry<br>Ukraine</p>
+            </div>
+         </div>
+         <div class="person">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <div class="teacher-info">
+               <h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2>
+               <p>Chemistry<br>Ukraine</p>
+            </div>
+         </div>
+         <div class="person">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <div class="teacher-info">
+               <h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2>
+               <p>Chemistry<br>Ukraine</p>
+            </div>
+         </div>
+         <div class="person">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <div class="teacher-info">
+               <h2 class="teacher-name"><strong>Ihor Tkachuk</strong></h2>
+               <p>Chemistry<br>Ukraine</p>
+            </div>
+         </div>
+      </div>
+      <hr class="string">
+</section>
+<section class="statistics">
+   <h1 >Statistics</h1>
+   <table class="stats-table">
+      <thead>
+         <tr>
+            <th>Name</th>
+            <th>Speciality</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Nationality</th>
+         </tr>
+      </thead>
+      <tbody>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <tr>
+            <td>Julia Bradley</td>
+            <td>Math</td>
+            <td>26</td>
+            <td>Female</td>
+            <td>USA</td>
+         </tr>
+         <tr>
+            <td>Rita Hart</td>
+            <td>Art</td>
+            <td>41</td>
+            <td>Female</td>
+            <td>Ireland</td>
+         </tr>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <tr>
+            <td>Daisy Alexander</td>
+            <td>Chemistry</td>
+            <td>28</td>
+            <td>Female</td>
+            <td>Vietnam</td>
+         </tr>
+         <!-- Add more rows as needed -->
+      </tbody>
+   </table>
+   <div class="pagination">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">...</a>
+      <a href="#">Last</a>
+   </div>
+</section>
+   <hr class="string">
+<section class="favorite-main">
+   <h1>Favorites</h1>
+   <div class="favorites">
+      <picture class="strelka">
+         <img src="images/strelka.jpg" alt="">
+      </picture>
+      <div class="favorite-item">
+         <img src="images/teacher.png" alt="Ihor Tkachuk">
+         <p>Ihor Tkachuk</p>
+         <p>Ukraine</p>
+      </div>
+      <div class="favorite-item">
+         <div class="initials">A.M</div>
+         <p>Anna Makarevich</p>
+         <p>Belarus</p>
+      </div>
+      <div class="favorite-item">
+         <img src="images/teacher.png" alt="John Burke">
+         <p>John Burke</p>
+         <p>Belgium</p>
+      </div>
+         <div class="favorite-item">
+            <img src="images/teacher.png" alt="Ihor Tkachuk">
+            <p>Ihor Tkachuk</p>
+            <p>Ukraine</p>
+         </div>
+            <div class="favorite-item">
+               <img src="images/teacher.png" alt="Ihor Tkachuk">
+               <p>Ihor Tkachuk</p>
+               <p>Ukraine</p>
+            </div>
+            <picture class="strelka-right">
+               <img src="images/strelka.jpg" alt="">
+            </picture>
+   </div>
+</section>
+   <hr class="string">
+   </main>
+
+<footer>
+   <div class="footer-text">
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. A atque facere, hic impedit itaque
+         molestiae sit tempore? Ea in mollitia natus rerum voluptates. Lorem ipsum dolor sit amet, consectetur adipiscing elit. A atque facere, hic impedit itaque
+         molestiae sit tempore? Ea in mollitia natus rerum voluptates.Lorem ipsum dolor sit amet, consectetur adipiscing elit. A atque facere, hic impedit itaque
+         molestiae sit tempore? Ea in mollitia natus rerum voluptates.
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eligendi illum in inventore.
+      </p>
+      <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. A atque esse expedita id iusto mollitia,
+         odit sint ullam veritatis vero?
+      </p>
+   </div>
+<div class="nav-footer">
+   <nav>
+      <ul>
+         <li><a href="#">Teachers</a></li>
+         <li><a href="#">Statistics</a></li>
+         <li><a href="#">Favorites</a></li>
+         <li><a href="#">About</a></li>
+      </ul>
+      <button class="add-teacher">Add teacher</button>
+   </nav>
+   </div>
+</footer>
+<!-- Modal window -->
+<div id="teacherInfoModal" class="modal">
+   <div class="modal-content">
+      <a href="#" class="close-button">&times;</a>
+      <div class="all-block">
+      <h2 class="nameOfTeachher">Teacher Info</h2>
+      <div class="teacher-info-in">
+         <img src="images/teacher.png" alt="Ihor Tkachuk" class="teacher-photo-in">
+         <div class="teacher-details">
+            <h1>Ihor Tkachuk</h1>
+            <h2><strong>Chemistry</strong></h2>
+            <div class="info-modal">
+               <p>Kyiv, Ukraine</p>
+               <p>35, Male</p>
+               <p><a href="mailto:ihor_tkachuk@domain.com">ihor_tkachuk@domain.com</a></p>
+               <p>+380964993252</p>
+            </div>
+         </div>
+      </div>
+      <p class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consequatur cupiditate
+         debitis deserunt doloribus dolorem earum eius eos minus nostrum odit omnis perferendis... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ab autem consequatur cupiditate
+         debitis deserunt doloribus dolorem earum eius eos minus </p>
+      <a href="#" class="toggle-map">toggle map</a>
+   </div>
+   </div>
+</div>
+
+<!--Form add teacher-->
+<div id="formModal" class="modal-form">
+   <div class="modal-content-add">
+      <a href="#" class="close-btn">&times;</a>
+      <form class="add-teacher-form" action="#" method="POST">
+         <h2>Add Teacher</h2>
+
+         <label for="name">Name</label>
+         <input type="text" id="name" name="name" placeholder="Enter name" required class="form-text">
+
+         <label for="specialty">Specialty</label>
+         <select id="specialty" name="specialty" required class="form-select">
+            <option value="mathematics">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+         </select>
+
+         <div class="from-row">
+         <div class="form-group">
+            <label for="country">Country</label>
+            <select id="country" name="country" required class="form-select">
+               <option value="ukraine">Ukraine</option>
+            </select>
+         </div>
+         <div class="form-group">
+         <label for="city">City</label>
+         <input type="text" id="city" name="city" class="form-text">
+         </div>
+      </div>
+      <div class="from-row">
+         <div class="form-group-2">
+         <label for="email">Email</label>
+         <input type="email" id="email" name="email" placeholder="example@mail.com" required class="form-email">
+         </div>
+         <div class="form-group-2">
+         <label for="phone">Phone</label>
+         <input type="tel" id="phone" name="phone" placeholder="123-456-7890" class="form-tel">
+         </div>
+</div>
+         <div class="form-group">
+         <label for="dob">Date of Birth</label>
+         <input type="date" id="dob" name="dob" required class="form-date">
+            </div>
+
+         <div class="gender-form"> 
+         <label>Sex</label>
+         <div class="radio-group">
+            <input type="radio" id="male" name="sex" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female" required>
+            <label for="female">Female</label>
+         </div>
+         </div>
+         <div class="color-bckg">
+            <label for="background-color">Background color</label>
+            <input type="color" id="background-color" name="background-color" class="form-color">
+         </div>
+
+         <label for="notes">Notes (optional)</label>
+         <textarea id="notes" name="notes" placeholder="Write something..." class="form-textarea"></textarea>
+
+         <button type="submit" class="add-btn">Add</button>
+      </form>
+   </div>
+</div>
+</body>
+
+</html>
